@@ -1,22 +1,3 @@
 body {
     background-color: black;
 }
-/* let PurchaseAmount = Number(prompt("Введите сумму покупки"));
-
-if (PurchaseAmount < 100) {
-  console.log("Скидки нет!");
-
-} else if (PurchaseAmount >= 100 && PurchaseAmount <= 500) {
-  console.log("Скидка 5%");
-
-} else if (PurchaseAmount > 500 && PurchaseAmount <= 1000) {
-  console.log("Скидка 10%");
-
-} else if (PurchaseAmount > 1000) {
-  console.log("Скидка 15%");
-
-} else {
-  console.log("Пожалуйста введите сумму покупки!");
-} 
-
- */
