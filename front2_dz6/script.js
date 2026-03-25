@@ -1,4 +1,4 @@
- var a = 'Bogdan'
+/*  var a = 'Bogdan'
 var b = 103;
 var c
 console.log(typeof c);
@@ -27,4 +27,5 @@ if (typeof sum === "number") {
 } else {
   console.log('Введите число');
   
-}
+} 
+ */
