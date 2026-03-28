@@ -42,17 +42,25 @@ let totalIncome = 0;
 let maxOrderSum = 0;
 let MaxCustomer = "";
 
-orders.forEach(order => {
-    const orderSum = order.items.reduce((sum , item) => sum + item.price * item.quantity, 0)
-    console.log(` Сумма заказа клиента ${order.customer}: ${orderSum}`);
-    totalIncome += orderSum
+for (let i = 0; i < orders.length; i++) {
+    let order = orders[i];
+    let orderSum = 0;
 
-    if ( orderSum > maxOrderSum ) {
-          maxOrderSum = orderSum
-          MaxCustomer = order.customer  
+    
+    for (let j = 0; j < order.items.length; j++) {
+        let item = order.items[j];
+        orderSum = orderSum + item.price * item.quantity;
     }
 
-}) 
+    console.log("Сумма заказа клиента " + order.customer + ": " + orderSum);
 
-console.log(`Общий доход магазина: ${totalIncome}`);
-console.log(`Самый дорогой заказ у клиента ${MaxCustomer}: ${maxOrderSum}`);
+    totalIncome = totalIncome + orderSum;
+
+    if (orderSum > maxOrderSum) {
+        maxOrderSum = orderSum;
+        MaxCustomer = order.customer;
+    }
+}
+
+console.log("Общий доход магазина: " + totalIncome);
+console.log("Самый дорогой заказ у клиента " + MaxCustomer + ": " + maxOrderSum);
