@@ -22,7 +22,7 @@ console.log(total,arr); */
 
  //Второе задание!
 
-  const favorites = [
+  /* const favorites = [
     {name: "Маикл Джордан", age: 47, role: "Basketball player"},
     {name: "MrBeast", age: 25, role: "Blogger"},
     {name: "Дуэн Джонсон", age: 30, role: "Actor"},
@@ -41,7 +41,7 @@ console.log(total,arr); */
   console.log(NamePlusRoles); 
 
 
- const agess = favorites.reduce((el, max) => el.age > max.age ? el : max ) // самый старший и самый младший среди них!
+const agess = favorites.reduce((el, max) => el.age > max.age ? el : max ) // самый старший и самый младший среди них!
 const ages = favorites.reduce((el, min) => el.age < min.age ? el : min)
 
 const ager = agess.age - ages.age // разница между ними!
@@ -58,3 +58,6 @@ console.log(searchForMinors);
 
 const peopleWhoAreOverTwenty = favorites.filter(el => el.age > 20) //Люди которым больше 20!
 console.log(peopleWhoAreOverTwenty);
+ */
+
+  
